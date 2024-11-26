@@ -39,5 +39,5 @@ public class Product  extends GenericModel {
 
     @ManyToOne
     @JoinColumn(name = "category_id", referencedColumnName = "id")
-    private CategoryProduct productCategory;
+    private Category category;
 }

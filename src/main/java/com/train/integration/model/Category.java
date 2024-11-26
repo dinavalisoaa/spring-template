@@ -14,14 +14,14 @@ import com.train.integration.generic.GenericModel;
 @Entity
 @Getter
 @Setter
-@Table(name = "category_product")
-public class CategoryProduct extends GenericModel {
+@Table(name = "category")
+public class Category extends GenericModel {
 
     private String name;
 
     private String description;
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "productCategory")
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "category")
     @JsonIgnore
     private List<Product> productList = new ArrayList<>();
 
