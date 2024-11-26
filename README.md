@@ -12,13 +12,21 @@ A simple way to create crud endpoints and crud service with simple entity
 - [ ] Get the benefit : difference of sale price and purchase price  
 - [ ] Order products after checking stock and qty available
 - [ ] Get the best customers by month or/and by outlet
-- [ ] Get the best product by month or/and outlet
+- [ ] Get the best product/category by month or/and outlet
 - [ ] Obtain inventory status by product
 - [ ] Sales statistics 
+- [ ] Advanced filter by product/category
+- [ ] Obtain turnover global / pointOf sale
 
 ### In Progress
 
 
 ### Done ✓
 
-- [x] 
+
+## Interesting Features
+- [ ] Using CI/CD
+- [ ] GraphQL version
+- [ ] WebUI
+- [ ] Swagger docs
+- [ ] Pdf report
