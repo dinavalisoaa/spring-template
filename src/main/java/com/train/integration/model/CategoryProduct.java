@@ -17,18 +17,18 @@ import com.train.integration.generic.GenericModel;
 @Table(name = "category_product")
 public class CategoryProduct extends GenericModel {
 
-    private String categoryName;
+    private String name;
 
-    private String categoryDescription;
+    private String description;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "productCategory")
     @JsonIgnore
     private List<Product> productList = new ArrayList<>();
 
-    public void setCategoryName(String categoryName){
+    public void setName(String categoryName){
         if (categoryName == null || categoryName.isEmpty()) {
             throw new IllegalArgumentException("Le nom ne peut pas être vide.");
         }
-        this.categoryName = categoryName;
+        this.name = categoryName;
     }
 }
