@@ -24,8 +24,11 @@ public class Order extends GenericModel {
 
     String reference;
     Date createAt;
-    boolean checked;
 
+    String state;
+
+    @ManyToOne
+    PointOfSale pointOfSale;
     // @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "order")
     // @JsonIgnore
     // private List<OrderLine> productList = new ArrayList<>();
